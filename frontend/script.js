@@ -1,5 +1,3 @@
-// frontend/script.js
-
 // Add an event listener to the form to handle form submission
 document.getElementById('weatherForm').addEventListener('submit', async (event) => {
     event.preventDefault(); // Prevent the default form submission behavior
