@@ -1,1 +1,35 @@
+<!-- frontend/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        input, button {
+            padding: 10px;
+            margin: 10px;
+        }
+        #weatherInfo {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Weather App</h1>
+    <form id="weatherForm">
+        <label for="zipCode">Enter ZIP Code:</label>
+        <input type="text" id="zipCode" name="zipCode" required>
+        <button type="submit">Get Weather</button>
+    </form>
+
+    <div id="weatherInfo"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
