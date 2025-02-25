@@ -12,3 +12,12 @@ A simple yet powerful weather application that allows users to enter a **ZIP cod
 
 ## Project Structure
 
+/WeatherApp │ ├── /frontend │ ├── index.html # HTML file for the frontend │ ├── script.js # JavaScript file for handling API requests │ ├── /backend │ └── server.js # Express server to handle requests │ ├── /node_modules # Node modules ├── package.json # Project dependencies └── README.md # Project documentation
+
+
+## Prerequisites
+
+- **Node.js** (v14+)
+- **npm** (v6+)
+- An internet connection to fetch weather data from the API.
+
