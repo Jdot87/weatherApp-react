@@ -1,35 +1,55 @@
 <!-- frontend/index.html -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Character encoding for proper display of characters -->
     <meta charset="UTF-8">
+    
+    <!-- Viewport settings for responsive design on different devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title of the webpage -->
     <title>Weather App</title>
+
+    <!-- Styling for the page -->
     <style>
+        /* Body styling */
         body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
+            font-family: Arial, sans-serif; /* Font style */
+            padding: 20px; /* Space around the content */
         }
+        
+        /* Styling for the input fields and button */
         input, button {
-            padding: 10px;
-            margin: 10px;
+            padding: 10px; /* Padding for the inputs and button */
+            margin: 10px; /* Margin for spacing */
         }
+
+        /* Styling for weather information */
         #weatherInfo {
-            margin-top: 20px;
+            margin-top: 20px; /* Space above the weather info */
         }
     </style>
 </head>
 <body>
+
+    <!-- Main heading of the app -->
     <h1>Weather App</h1>
+
+    <!-- Form to get the ZIP code from the user -->
     <form id="weatherForm">
         <label for="zipCode">Enter ZIP Code:</label>
+        <!-- Input field where users enter the ZIP code -->
         <input type="text" id="zipCode" name="zipCode" required>
+        <!-- Submit button to send the request for weather data -->
         <button type="submit">Get Weather</button>
     </form>
 
+    <!-- Div to display the weather information after form submission -->
     <div id="weatherInfo"></div>
 
+    <!-- External JavaScript file where the logic for fetching weather data will reside -->
     <script src="script.js"></script>
 </body>
 </html>
-
